@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/404.css">
+    <style>
+        .s_404{
+            width: 980px;
+            height: 500px;
+            margin:0 auto;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .s_404>img{
+            position: absolute;
+            top:110px;
+            left: 440px;
+            width: 100px;
+            animation:dong 1.5s;
+            transform:translateY(0);
+        }
+        @keyframes dong{
+            0%{transform:translateY(-60px) scale(0.4); opacity: 0;}
+            10%{transform:translateY(0) scale(0.8); opacity: 0.1;}
+            30%{transform:translateY(10) scale(1.3); opacity: 1;}
+            50%{transform:translateY(20px) scale(0.6); opacity: 0.3;}
+            70%{transform:translateY(30px) scale(1.2); opacity: 1;}
+            80%{transform:translateY(50px)  scale(0.7); opacity: 0.8; }
+            100%{transform:translateY(0px)  scale(1); opacity: 1; }
+
+        }
+        .s_404>h2{
+            position: absolute;
+            bottom: 200px;
+            left: 375px;
+            color: #999;
+        }
+
+    </style>
+</head>
+<body>
+    <header id="header">
+
+    </header>
+    <!--中间主体内容-->
+    <div class="s_404">
+        <img src="img/404/404.png" alt="">
+        <h2>服务暂未上线 敬请期待!!</h2>
+    </div>
+    <footer id="footer">
+
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/carts.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/header/logo.ico" type="img/header/logo.ico">
+</head>
+<body>
+<!--头部嵌套开始-->
+<header id="header"></header>
+<!--头部嵌套结束-->
+<!--中间内容部分开始-->
+ <div class="cart_center">
+        <ul class="cart_ul">
+            <li>商品信息</li>
+            <li>单价(元)</li>
+            <li>数量</li>
+            <li>金额</li>
+            <li>操作</li>
+        </ul>
+        <div class="carta_div">
+
+        </div>
+        <!--底部结算功能-->
+        <ul class="ul_bottom">
+            <li id="img_false chek" class="img_false"><img id="img_quan" src="img/carts/false.png" alt="">&nbsp;全选</li>
+            <li>
+                <a href="">删除</a>
+                <a href="">移入收藏夹</a>
+            </li>
+            <li><span>已选择商品 <b id="xuanzhong">0</b> 件</span></li>
+            <li><span>合计:<b id="yuan">￥0.00</b></span></li>
+            <li class="js_btn"><input type="button" value="结算"></li>
+        </ul>
+        <!--底部结算功能结束-->
+        <!--精品推荐-->
+        <div class="jing_pin">
+            <h3>买购物车的人还买了</h3>
+            <div class="jing_lrt">
+                <a href="" class=""><i class="fa fa-chevron-left li"></i></a>
+                <a href="" class=""><i class="fa fa-chevron-right ri"></i></a>
+            </div>
+            <div class="jing_div">
+            <ul class="jing_ul">
+            </ul>
+            </div>
+        </div>
+        <!--精品推荐结束-->
+    </div>
+    <!--中间内容部分结束-->
+<!--底部列表嵌套开始-->
+<footer id="footer"></footer>
+<!--底部列表嵌套结束-->
+<script src="js/jquery.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/carts.js"></script>
+</body>
+</html>

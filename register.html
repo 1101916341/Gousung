@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>用户注册</title>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="font/css/font-awesome.css">
+<link rel="stylesheet" href="css/register.css">
+<link rel="shortcut icon" href="img/header/logo.ico" type="img/header/logo.ico">
+</head>
+<body>
+<!--头部-->
+<div class="log">
+    <img src="./img/header/logo.png" alt="">
+</div>
+<!--主体部分-->
+<div class="bg">
+    <div class="register">
+        <p class="dl"><span>商城注册</span></p>
+        <form action="data/login/login.php"  id="forms" class="forms">
+            <div class="unames public">
+                <input type="text" id="uname" name="uname" class="uname" required placeholder="请输入用户名">
+                <i class="fa fa-user fa"></i>
+                <span class="names">用户名6--15位之间</span>
+            </div>
+
+            <div class="upwds public">
+                <input type="text" id="upwd" name="upwd" class="upwd" required placeholder="请输入密码">
+                <i class="fa fa-unlock-alt fa"></i>
+                <span class="uppw">密码长度6--15位之间</span>
+            </div>
+
+            <div class="emails public">
+                <input type="email" id="email" name="email" class="email" required placeholder="请输入邮箱">
+                <i class="fa fa-user fa"></i>
+                <span class="emaill">请输入正确邮箱</span>
+            </div>
+
+            <div class="phones public">
+                <input type="tel" id="phone" name="phone" class="phone" required placeholder="请输入手机号">
+                <i class="fa fa-user fa"></i>
+                <span class="phon">请输入正确手机号</span>
+            </div>
+
+            <div class="yzms public">
+                <img src="data/login/00_code.php" id="Yzm"  alt="看不清点击换一张">
+                <input type="text" id="yanzheng" required  placeholder="验证码">
+                <i class="fa fa-repeat fa"></i>
+            </div>
+            <div class="public btn">
+                <input type="button" id="btn" value="登陆">
+            </div>
+        </form>
+    </div>
+</div>
+<footer id="footer">
+</footer>
+<script src="js/jquery.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>

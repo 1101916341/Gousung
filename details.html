@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详情</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="shortcut icon" href="img/header/logo.ico" type="img/header/logo.ico">
+</head>
+<body>
+<!--头部嵌套开始-->
+<header id="header"></header>
+<!--头部嵌套结束-->
+<div class="details_main">
+    <!--面包屑导航-->
+    <ul class="details_ul">
+        <li><a href="javascript:;">首页</a></li>
+        <li><a href="javascript:;">分类</a></li>
+        <li><a href="javascript:;">内容</a></li>
+    </ul>
+    <!--面包屑导航结束-->
+    <!--详情页主题部分-->
+    <div class="details_cont">
+        <!--左侧放大镜开始-->
+        <div class="details_cont_left">
+
+            <!--lg和md图片还有放大镜的盒子-->
+            <div class="box">
+                <div class="box_md">
+                    <img id="md_img" src="img/details/md/04_md.jpg" alt="">
+                    <div id="mask"></div>
+                    <div id="masks"></div>
+                </div>
+                <div class="box_lg"  id="lg_img">
+                </div>
+            </div>
+            <div class="details_cont_list" id="details_cont_list">
+
+            </div>
+        </div>
+        <!--左侧放大镜开始-->
+
+        <!--右侧详细内容开始-->
+        <div class="details_cont_right">
+            <!--标题-->
+            <h2 id="title_h2"> </h2>
+            <!--商品信息-->
+            <ul class="details_right_ul">
+                <li class="ul_1">
+                    <p>店铺优惠</p>
+                    <b id="youhui"> </b>
+                    <span>点击领券 <i class="fa fa-hand-o-down"></i></span>
+                </li>
+                <li  class="ul_2">
+                    <i>服务承诺</i>
+                    <b id="chengnuo"> </b>
+                </li>
+                <li  class="ul_3"><p>原价</p><b id="jiage"> </b></li>
+                <div class="right_li">
+                    <li class="ul_4">
+                        <p>优惠券</p>
+                        <b>125减5</b>
+                        <b>198减10</b>
+                        <b>298减20</b>
+                    </li>
+                </div>
+            </ul>
+            <!--省级联动结束-->
+            <div class="details_nav">
+                <span>配送至</span>
+                <!--省份-->
+                <select id="select-province">
+                    <option value="-1">—请选择省份—</option>
+                </select>
+                <!--市里-->
+                <select  id="select-city">
+                    <option value="-1">—请选择地级市—</option>
+                </select>
+                <i>快递费10元</i>
+            </div>
+            <!--省级联动结束-->
+            <!--销量显示-->
+            <div class="details_liang">
+                <span>月销量<b id="yue"> </b></span>
+                <span>累计销量<b id="leiji"> </b></span>
+                <span>累计评价<b id="pingjia"> </b></span>
+            </div>
+            <!--销量显示结束-->
+            <!--商品品种选择-->
+            <ul class="details_right_select">
+                <li class="details_pinzhong">
+                    <span>包装</span>
+                    <em class="ement">手袋单人份</em>
+                    <em>礼盒双人份</em>
+                    <em>全家福礼包</em>
+                </li>
+                <li class="details_baozhuang">
+                    <span id="baozhuang">口味</span>
+                    <a class="ement2"></a>
+                    <a></a>
+                    <a></a>
+                </li>
+                <li id="btne">
+                    <span>数量</span>
+                    <input class="li_jian" type="button" value="-">
+                    <i class="li_zhi">1</i>
+                    <input class="li_jia" type="button" value="+">
+                </li>
+                <li id="bttten">
+
+                </li>
+            </ul>
+            <!--商品品种选择结束-->
+        </div>
+        <!--右侧详细内容结束-->
+    </div>
+    <!--详情页主题部分结束-->
+    <!--优惠套餐开始-->
+    <div class="details_youhui">
+        <h2>优惠套装</h2>
+        <ul class="youhui_ul">
+            <li>
+                <img src="img/details/sm/05_sm.jpg" alt="">
+                <i>萨拉米 1+1小鸡腿</i>
+                <b>￥29.90</b>
+            </li>
+            <span>+</span>
+            <li>
+                <img src="img/details/sm/06_sm.jpg" alt="">
+                <i>ZEK 原味海苔</i>
+                <b>￥9.90</b>
+            </li>
+            <span>=</span>
+            <li class="right_li_btn">
+                <span>套餐价:<b>￥35.00</b></span>
+                <a href="carts.html">立即购买</a>
+            </li>
+        </ul>
+    </div>
+    <!--优惠套餐结束-->
+    <!--大块图片内容和小块商品推荐-->
+    <div class="details_img_cart">
+        <!--左侧商品推荐-->
+        <div class="details_img_left">
+            <h2>看了又看</h2>
+            <!--列表商品-->
+            <ul class="details_img_ul">
+                <!--<li>-->
+                    <!--<img src="img/details/md/06_md.jpg" alt="">-->
+                    <!--<a href="">【三只松鼠_开口松子】零食坚果特产炒货东北红松子原味</a>-->
+                    <!--<b>￥35.90</b>-->
+                <!--</li>-->
+            </ul>
+            <!--列表商品结束-->
+        </div>
+        <!--左侧商品推荐结束-->
+
+        <!--右侧大图详情-->
+        <div class="details_img_right">
+            <div class="details_img_h2">
+                <h2 class="ction">宝贝详情</h2>
+                <h2>全部评价</h2>
+                <h2>猜你喜欢</h2>
+            </div>
+            <!--文字信息-->
+            <div class="details_img_wenzi">
+                <!--<h3>产品参数:<i class="fa fa-th-list"></i></h3>-->
+                <!--<ul class="details_img_list">-->
+                    <!--<li>产品类型: 烘炒类</li>-->
+                    <!--<li>原料产地: 巴基斯坦</li>-->
+                    <!--<li>产地: 湖北省武汉市</li>-->
+                    <!--<li>配料表: 进口松子、食用盐</li>-->
+                    <!--<li>产品规格: 210g</li>-->
+                    <!--<li>保质期: 180天</li>-->
+                    <!--<li>产品标准号: GB/T 22165</li>-->
+                    <!--<li>生产许可证编号： QS4201 1801 0226</li>-->
+                    <!--<li>储存方法： 请放置于常温、阴凉、通风、干燥处保存 </li>-->
+                    <!--<li>食用方法： 开袋去壳即食</li>-->
+                <!--</ul>-->
+            </div>
+            <!--文字信息结束-->
+            <!--图片信息开始-->
+            <div class="details_img_img">
+                <h3>商品细节:<i class="fa fa-picture-o"></i></h3>
+                <img src="img/details/bg/tw1.jpg" alt="">
+                <img src="img/details/bg/tw2.jpg" alt="">
+                <img src="img/details/bg/tw3.jpg" alt="">
+                <img src="img/details/bg/tw4.jpg" alt="">
+                <img src="img/details/bg/tw5.jpg" alt="">
+                <img src="img/details/bg/tw6.jpg" alt="">
+                <img src="img/details/bg/tw7.jpg" alt="">
+            </div>
+            <!--图片信息结束-->
+        </div>
+        <!--右侧大图详情结束-->
+
+    </div>
+</div>
+
+<!--底部列表嵌套开始-->
+<footer id="footer"></footer>
+<!--底部列表嵌套结束-->
+<script src="js/jquery.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/details.js"></script>
+</body>
+</html>

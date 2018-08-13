@@ -1,0 +1,138 @@
+/*图标*/
+div.log{
+    display:flex;
+    width:600px;
+    margin:0 auto;
+}
+body{
+    min-width: 980px;
+}
+div.log>img{
+    height:70px;
+}
+a{
+    display: inline-block;
+}
+/*内容主体*/
+div.bg{
+    box-shadow: 0px 0px 5px #ccc;
+    position:relative;
+    width:100%;
+    height:600px;
+    background:url("../img/timg3.jpg") no-repeat;
+    background-size:100% 100%;
+}
+div.login{
+    position:absolute;
+    width:310px;
+    height:340px;
+    right:320px;
+    top:100px;
+    border-radius:5px;
+    background:rgba(205,224,231,0.3);
+    box-shadow: 0px 0px 5px #ccc;
+    display:flex;
+    flex-direction:column;
+}
+@media screen and ( max-width: 618px){
+    div.login{
+        width:310px;
+        height:340px;
+        position: absolute;
+        left:50%;
+        margin-left:-180px;
+        text-align: center;
+    }
+}
+/*登陆文字样式*/
+div.login>p.dl{
+    height: 60px;
+    border-bottom: 2px inset #ccc;
+}
+div.login>p.dl>span{
+    position:absolute;
+    display:inline-block;
+    font-size:20px;
+    left:85px;
+    top: 6.5px;
+    line-height: 45px;
+    color: #ff6700;
+}
+.login>p.dl>a{
+    position:absolute;
+    display:inline-block;
+    padding: 5px 10px;
+    background:#ccc;
+    color:#000;
+    top:15px;
+    border-radius:2px;
+    right:30px;
+}
+.login>p.dl>a:hover{
+    background:#ff6700;
+    color: #fff7d1;
+}
+/*登陆文字样式结束*/
+/*Form 表单内容样式*/
+.forms{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.forms>div{
+    margin:0 auto;
+    margin-top: 15px;
+}
+.public{
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+}
+.public i {
+    position: absolute;
+    left: 11px;
+    top: 15px;
+}
+
+.public>input{
+    width:180px;
+    height:30px;
+    font-size:16px;
+    padding-left:30px;
+    box-sizing:border-box;
+    position:relative;
+}
+#yanzheng{
+    width: 90px;
+    padding-left: 5px;
+    margin: 5px auto;
+    display: block;
+}
+div.yzms i.fa-repeat{
+    left: 103px;
+    top: 57px;
+    cursor: pointer;
+}
+div.btn{
+    margin-top: 35px;
+}
+div.btn>input{
+    padding: 0;
+    background: #ff6700;
+    color: #fff;
+    outline: none;
+    border-radius: 5px;
+}
+/*input表单样式*/
+
+/*input表单样式结束*/
+/*Form 表单内容样式结束*/
+/*内容主体样式结束*/
+
+/*底部样式*/
+#footer{
+    margin: 0;
+}
+#footer div.foot_logo>p.sm {
+    bottom: 10px;
+}
